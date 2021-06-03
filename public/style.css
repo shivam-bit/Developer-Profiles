@@ -184,12 +184,13 @@ hr {
 
   .searchBar {
     margin-top: 50px;
-    width: 700px;
+    width: auto;
     padding: 10px;
   }
 
   .searcBar__inputSpace {
     height: 50px;
+    width: 700px;
     padding-left: 24px;
     font-size: 24px;
     color: #D0CDE1;
@@ -205,6 +206,7 @@ hr {
 
   .devProfilesSection {
     row-gap: 91px;
+    column-gap: 134px;
     margin: 100px 0;
   }
 
