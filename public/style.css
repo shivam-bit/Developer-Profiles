@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   margin: 0;
   align-items: center;
+  overflow-x: hidden;
 }
 
 #cover-image {
