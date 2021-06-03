@@ -53,6 +53,7 @@ body {
 
 .explore-section-header {
   margin: 20px;
+  color: #2F2E41;
 }
 
 hr {
@@ -60,7 +61,7 @@ hr {
   height: 2px;
   background-color: #D0CDE1;
   margin: 0;
-  border: 0px;
+  border: 0;
 }
 
 .searchBar {
@@ -97,7 +98,6 @@ hr {
   align-items: center;
   justify-items: center;
   row-gap: 18px;
-  /* justify-content: space-around; */
   margin: 30px 0;
 }
 
@@ -106,16 +106,19 @@ hr {
   display: flex;
   align-items: center;
   font-size: 12px;
+  color: #9F8E63;
 }
 
 .devProfile__Image {
   width: 20px;
   margin-right: 5px;
+  filter: invert(43%) sepia(14%) saturate(1458%) hue-rotate(223deg) brightness(92%) contrast(82%);
 }
 
 .devProfile__link {
   height: 6px;
   margin-left: 4px;
+  filter: invert(29%) sepia(94%) saturate(2966%) hue-rotate(208deg) brightness(97%) contrast(104%);
 }
 
 .addDevSection {
@@ -137,7 +140,7 @@ hr {
   border-radius: 15px;
   background-color: #7C639F;
   color: #FFFFFF;
-  border: 0px;
+  border: 0;
 }
 
 .footer {
@@ -153,4 +156,96 @@ hr {
 .footer-heart {
   height: 5px;
   width: 5px;
+  filter: invert(100%) sepia(0%) saturate(7423%) hue-rotate(110deg) brightness(117%) contrast(117%);
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 600px;
+  }
+
+  .project-name {
+    font-size: 72px;
+    margin: auto 100px;
+  }
+
+  #cover-image {
+    width: 600px;
+    height: 500px;
+  }
+
+  .explore-section-header {
+    margin: 50px;
+    font-size: 56px;
+  }
+
+  .searchBar {
+    margin-top: 50px;
+    width: 700px;
+    padding: 10px;
+  }
+
+  .searcBar__inputSpace {
+    height: 50px;
+    padding-left: 24px;
+    font-size: 24px;
+    color: #D0CDE1;
+  }
+
+  .searchBar__finderIcon {
+    margin: auto 20px;
+  }
+
+  #finderIcon {
+    height: 50px;
+  }
+
+  .devProfilesSection {
+    row-gap: 91px;
+    margin: 100px 0;
+  }
+
+  .devProfile {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .devProfile__Image {
+    width: 100px;
+    margin-right: 50px;
+    filter: invert(43%) sepia(14%) saturate(1458%) hue-rotate(223deg) brightness(92%) contrast(82%);
+  }
+
+  .devProfile__link {
+    height: 15px;
+    margin-left: 20px;
+  }
+
+  .addDevSection {
+    margin: 50px 0 30px;
+    font-size: 36px;
+  }
+
+  .addDevSection__Header {
+    margin-bottom: 50px;
+  }
+
+  .addDevSection__btn {
+    width: auto;
+    height: 80px;
+    padding: 0 72px;
+    font-size: 36px;
+  }
+
+  .footer {
+    font-size: 24px;
+    height: 80px;
+  }
+
+  .footer-heart {
+    height: 24px;
+    width: 24px;
+  }
 }
