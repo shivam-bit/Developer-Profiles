@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 window.onload = () => {
-    const triggerBtn = document.querySelector('.addDevSection__btn');
+    const triggerBtn = document.querySelector('.add-dev-section__btn');
     const modalBox = document.querySelector('.modal');
     const closeBtn = document.querySelector('.close-button');
     triggerBtn.addEventListener('click', () => {

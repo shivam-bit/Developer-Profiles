@@ -65,7 +65,7 @@ hr {
   border: 0;
 }
 
-.searchBar {
+.search-bar {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -89,12 +89,12 @@ hr {
   /* align-items: flex-end; */
 }
 
-.searchBar__finderIcon {
+.search-bar__finderIcon {
   display: flex;
   align-items: center;
 }
 
-.devProfilesSection {
+.dev-profiles-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -103,7 +103,7 @@ hr {
   margin: 30px 0;
 }
 
-.devProfile {
+.dev-profile {
   /* border: 1px solid yellowgreen; */
   display: flex;
   align-items: center;
@@ -111,19 +111,19 @@ hr {
   color: #9F8E63;
 }
 
-.devProfile__Image {
+.dev-profile__Image {
   width: 20px;
   margin-right: 5px;
   filter: invert(43%) sepia(14%) saturate(1458%) hue-rotate(223deg) brightness(92%) contrast(82%);
 }
 
-.devProfile__link {
+.dev-profile__link {
   height: 6px;
   margin-left: 4px;
   filter: invert(29%) sepia(94%) saturate(2966%) hue-rotate(208deg) brightness(97%) contrast(104%);
 }
 
-.addDevSection {
+.add-dev-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,12 +131,12 @@ hr {
   margin: 30px 0;
 }
 
-.addDevSection__Header {
+.add-dev-section__Header {
   margin-bottom: 10px;
   color: #3F3D56;
 }
 
-.addDevSection__btn {
+.add-dev-section__btn {
   width: 180px;
   height: 30px;
   border-radius: 15px;
@@ -183,7 +183,7 @@ hr {
     font-size: 56px;
   }
 
-  .searchBar {
+  .search-bar {
     margin-top: 50px;
     width: auto;
     padding: 10px;
@@ -205,38 +205,38 @@ hr {
     height: 50px;
   }
 
-  .devProfilesSection {
+  .dev-profiles-section {
     row-gap: 91px;
     column-gap: 134px;
     margin: 100px 0;
   }
 
-  .devProfile {
+  .dev-profile {
     font-size: 36px;
     font-weight: 400;
   }
 
-  .devProfile__Image {
+  .dev-profile__Image {
     width: 100px;
     margin-right: 50px;
     filter: invert(43%) sepia(14%) saturate(1458%) hue-rotate(223deg) brightness(92%) contrast(82%);
   }
 
-  .devProfile__link {
+  .dev-profile__link {
     height: 15px;
     margin-left: 20px;
   }
 
-  .addDevSection {
+  .add-dev-section {
     margin: 50px 0 30px;
     font-size: 36px;
   }
 
-  .addDevSection__Header {
+  .add-dev-section__Header {
     margin-bottom: 50px;
   }
 
-  .addDevSection__btn {
+  .add-dev-section__btn {
     width: auto;
     height: 80px;
     padding: 0 72px;
@@ -312,7 +312,7 @@ hr {
   margin: 50px 0;
 }
 
-.profileItem {
+.profile-item {
   display: grid;
   grid-template-columns: 30px 1fr;
   row-gap: 20px;
@@ -320,12 +320,12 @@ hr {
   margin-bottom: 25px;
 }
 
-.profileItem__logo {
+.profile-item__logo {
   height: 30px;
   width: 30px;
 }
 
-.profileItem__userName {
+.profile-item__userName {
   width: 600px;
   height: 50px;
   grid-column: 1 / 3;
