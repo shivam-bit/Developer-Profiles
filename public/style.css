@@ -84,8 +84,9 @@ hr {
   font-size: 12px;
   height: 20px;
   margin: 0 4px;
-  display: flex;
-  align-items: flex-end;
+  border: 0;
+  /* display: flex; */
+  /* align-items: flex-end; */
 }
 
 .searchBar__finderIcon {
@@ -251,4 +252,107 @@ hr {
     height: 24px;
     width: 24px;
   }
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background-color: #00000080;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: initial !important */
+}
+
+.modal-content {
+  overflow:auto;
+  /* overflow:visible; */
+  overflow-y:scroll;
+  /* overflow-y: auto; */
+  /* max-height: 100%; */
+  position: absolute;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  height: 80%;
+  /* width: 70%; */
+}
+
+.close-button {
+  float: right;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal__header {
+  /* align-self: flex-start; */
+  font-size: 32px;
+  margin: 50px  0;
+  background-color: aquamarine;
+}
+
+.modal__main {
+  font-size: 24px;
+  margin: 50px 0;
+}
+
+.profileItem {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  row-gap: 20px;
+  column-gap: 12px;
+  margin-bottom: 25px;
+}
+
+.profileItem__logo {
+  height: 30px;
+  width: 30px;
+}
+
+.profileItem__userName {
+  width: 600px;
+  height: 50px;
+  grid-column: 1 / 3;
+  border: 1px solid #D0CDE1;
+  border-radius: 10px;
+}
+
+.modal__footer {
+  margin: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  background-color:#FFFFFF;
+  font-size: 24px;
+  border: 0;
+  margin: 0 50px;
+  color: #3F3D56;
+}
+
+.submit-button {
+  font-size: 24px;
+  border: 0;
+  border-radius: 15px;
+  height: 50px;
+  width: 175px;
+  background-color: #7C639F;
+  color: #FFFFFF;
 }
