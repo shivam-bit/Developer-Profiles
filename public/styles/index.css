@@ -115,7 +115,7 @@ hr {
 .dev-profile__Image {
   width: 20px;
   margin-right: 5px;
-  filter: invert(43%) sepia(14%) saturate(1458%) hue-rotate(223deg) brightness(92%) contrast(82%);
+  border-radius: 50%;
 }
 
 .dev-profile__link {
@@ -187,9 +187,6 @@ hr {
   overflow: auto;
   position: absolute;
   background-color: #FFFFFF;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
   padding: 0 30px;
   max-height: 1200px;
   height: 90%;
@@ -235,6 +232,7 @@ hr {
   grid-column: 1 / 3;
   border: 1px solid #D0CDE1;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .modal__footer {
@@ -260,6 +258,18 @@ hr {
   width: 50%;
   background-color: #7C639F;
   color: #FFFFFF;
+}
+
+.error-box {
+  display: none;
+  background-color: #F8D3D2;
+  color: #811A17;
+  font-size: 20px;
+  margin: 25px 0;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -307,7 +317,6 @@ hr {
     width: 700px;
     padding-left: 24px;
     font-size: 24px;
-    color: #D0CDE1;
   }
 
   .searchBar__finderIcon {
@@ -332,7 +341,6 @@ hr {
   .dev-profile__Image {
     width: 100px;
     margin-right: 50px;
-    filter: invert(43%) sepia(14%) saturate(1458%) hue-rotate(223deg) brightness(92%) contrast(82%);
   }
 
   .dev-profile__link {
