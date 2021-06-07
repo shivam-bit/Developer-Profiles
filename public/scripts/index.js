@@ -92,6 +92,7 @@ window.onload = () => {
             errorBox,
             modalBox,
         );
+        clearForm(github, linkedin, codechef, hackerrank, twitter, medium, errorBox);
     });
     finderBtn.addEventListener('click', () => {
         const devsArr = Array.from(devProfilesSection.children);
