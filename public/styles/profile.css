@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Nunito Sans';
+}
+
+.navbar {
+  height: 50px;
+  background-color: #2F2E41;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 21.82px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  background-color: #E5E5E5;;
+}
+
+.profile-image {
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 24px;
+  color: #3F3D56;
+}
+
+.user-tagline {
+  font-weight: 400;
+  font-size: 12px;
+  width:60%;
+  text-align: center;
+}
+
+.user-profiles {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-profiles__item {
+  height: 18px;
+  width: 18px;
+}
+
+.user-additional-info {
+  display: flex;
+  /* border: solid 1px red; */
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.github-repos {
+    flex-grow: 2;
+    padding: 0 20px;
+}
+
+.section-header {
+  font-size: 32px;
+  margin:20px 0;
+  text-align: center;
+  color: #3F3D56;
+}
+
+.user-repo {
+  display: grid;
+  /* grid-template-columns: fit-content(80%) minmax(20%,auto); */
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  row-gap: 5px;
+  padding: 15px 0;
+  border-top: 1px solid #D0CDE1;
+  border-bottom: 1px solid #D0CDE1;
+  justify-items: center;
+  text-align: center;
+}
+
+.user-repo__last-updated,.user-repo__description {
+  /* grid-column: 1 / 3; */
+}
+
+.user-repo__name {
+  font-size: 22px;
+  color: #0768FA;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-repo__link-icon {
+    filter: invert(23%) sepia(44%) saturate(5947%) hue-rotate(213deg) brightness(106%) contrast(96%);
+    opacity: 0.4;
+}
+
+.user-repo__last-updated{
+  font-size: 14px;
+  color: #3F3D56;
+}
+
+.user-repo__description {
+  font-size: 18px;
+  color: #3F3D56;
+}
+
+.footer {
+  flex-basis: 50px;
+  margin-top: auto;
+  bottom: 0;
+  font-size: 6px;
+  color: #FFFFFF;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F3D56;
+}
+
+.footer-heart {
+  height: 5px;
+  width: 5px;
+  filter: invert(100%) sepia(0%) saturate(7423%) hue-rotate(110deg) brightness(117%) contrast(117%);
+}
+
+@media screen and (min-width: 600px){
+  .navbar {
+    height: 100px;
+    font-size: 24px;
+  }
+
+  .profile {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    background-color: #E5E5E5;
+  }
+
+  .profile-image {
+    height: 400px;
+    width: 400px;
+    margin: 0 100px;
+  }
+
+  .user-content {
+    margin: 100px 0;
+    align-items: unset;
+  }
+
+  .user-name {
+    font-size: 48px;
+  }
+
+  .user-tagline {
+    font-size: 24px;
+    margin: 30px 0;
+    text-align: unset;
+    width: 80%;
+  }
+
+  .user-profiles {
+    width: 50%;
+    justify-content: space-between;
+    margin: unset;
+    margin-bottom: 30px;
+  }
+
+  .user-profiles__item {
+    height: 30px;
+    width: 30px;
+  }
+
+  .user-additional-info{
+    width: 50%;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .section-header {
+    font-size: 56px;
+  }
+
+  .user-repo {
+    grid-template-columns:auto 1fr;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 30px 0;
+  }
+
+  .user-repo__name {
+    font-size: 36px;
+  }
+
+  .user-repo__last-updated {
+    font-size: 24px;
+    justify-self: start;
+  }
+
+  .user-repo__description {
+    font-size: 32px;
+    grid-column: 1 / 3;
+    justify-self: start;
+  }
+}
