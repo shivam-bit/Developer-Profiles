@@ -9,9 +9,10 @@ const api = require('./api');
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded());
-app.get('/:id', (req, res) => {
-    res.sendFile(path.resolve('public', 'profile.html'));
-});
-app.use('/api', api);
+// app.get('/:id', (req, res) => {
+//     res.sendFile(path.resolve('public', 'profile.html'));
+// });
+// app.use('/:id', api);
+app.use('/', api);
 
 app.listen(port, () => console.log(`server listening on port:${port}`));

@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+const path = require('path');
 const { githubBaseInfo, githubRepos } = require('./githubController');
 
 let allUsers = [
@@ -331,4 +332,18 @@ exports.getAllUsers = (req, res, next) => {
 exports.deleteUser = (req, res, next) => {
     allUsers = allUsers.filter((user) => user.id !== req.params.id);
     res.status(204).send(JSON.stringify('User deleted'));
+};
+
+exports.renderUserProfile = (req, res, next) => {
+    const user = allUsers.filter((element) => {
+        if (req.params.id === element.id) {
+            return element;
+        }
+        return false;
+    });
+    if (user.length === 0) {
+        res.redirect('/');
+    } else {
+        res.sendFile(path.resolve('public', 'profile.html'));
+    }
 };
