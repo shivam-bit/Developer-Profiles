@@ -8,11 +8,14 @@ fetch('/api/developers/')
         return users;
     })
     .then((arr) => console.log(arr));
+
 const createDevProfile = (user) => {
     const userDiv = document.createElement('div');
     const userImage = document.createElement('img');
     const userId = document.createElement('div');
     const linkImage = document.createElement('img');
+    const parentLink = document.createElement('a');
+    parentLink.href = user.id;
     userDiv.classList.add('dev-profile');
     userImage.src = user.avatar_url;
     userImage.classList.add('dev-profile__Image');
@@ -20,7 +23,8 @@ const createDevProfile = (user) => {
     userId.textContent = user.id;
     linkImage.src = './Assets/Icons _ Illustrations/north_east-24px.svg';
     linkImage.classList.add('dev-profile__link');
-    userDiv.append(userImage, userId, linkImage);
+    parentLink.appendChild(linkImage);
+    userDiv.append(userImage, userId, parentLink);
     return userDiv;
 };
 const clearForm = (github, linkedin, codechef, hackerrank, twitter, medium, errorBox) => {
