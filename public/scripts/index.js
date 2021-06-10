@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
 let users = [];
 fetch('/api/developers/')
@@ -32,6 +33,7 @@ const clearForm = (github, linkedin, codechef, hackerrank, twitter, medium, erro
     twitter.value = '';
     medium.value = '';
 };
+// eslint-disable-next-line camelcase
 const addUser = (github_id, linkedin_id, codechef_id, hackerrank_id, twitter_id, medium_id, errorBox, modalBox) => {
     fetch('/api/developers', {
         method: 'POST',
@@ -116,7 +118,7 @@ window.onload = () => {
         });
         searchBar.removeEventListener('input');
     });
-    users.length===0 && (addDevHeader.textContent = 'No developers added yet');
+    users.length === 0 && (addDevHeader.textContent = 'No developers added yet');
     users.forEach((user) => {
         const temp = createDevProfile(user);
         devProfilesSection.appendChild(temp);
