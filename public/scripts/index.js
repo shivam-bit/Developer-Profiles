@@ -59,6 +59,7 @@ const addUser = (github_id, linkedin_id, codechef_id, hackerrank_id, twitter_id,
             errorBox.style.display = 'block';
         });
 };
+
 window.onload = () => {
     const triggerBtn = document.querySelector('.add-dev-section__btn');
     const modalBox = document.querySelector('.modal');
@@ -67,6 +68,7 @@ window.onload = () => {
     const submitBtn = document.querySelector('.submit-button');
     const finderBtn = document.querySelector('#finderIcon');
     const searchBar = document.querySelector('.searcBar__inputSpace');
+    const addDevHeader = document.querySelector('.add-dev-section__Header');
     const github = document.querySelector('#Github');
     const linkedin = document.querySelector('#Linkedin');
     const codechef = document.querySelector('#Codechef');
@@ -114,6 +116,7 @@ window.onload = () => {
         });
         searchBar.removeEventListener('input');
     });
+    users.length===0 && (addDevHeader.textContent = 'No developers added yet');
     users.forEach((user) => {
         const temp = createDevProfile(user);
         devProfilesSection.appendChild(temp);
